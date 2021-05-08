@@ -4,75 +4,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lists & Tables</title>
+    <title>Forms & Input</title>
   </head>
   <body>
-    <!-- Unordered Lists with change list style -->
-    <ul style="list-style: decimal-leading-zero">
-      <li>Item -1</li>
-      <li>Item -2</li>
-      <li>Item -3</li>
-      <li>Item -4</li>
-      <li>Item -5</li>
-      <li>Item -6</li>
-    </ul>
+    <form action="">
+      <!-- Text Input -->
+      <div>
+        <label for="name">Name</label> <br />
+        <input type="text" id="name" />
+      </div>
+      <!-- Email Input -->
+      <div>
+        <label for="email">Email</label><br />
+        <input type="email" name="email" id="email" />
+      </div>
+      <!-- Text area -->
+      <div>
+        <label for="message">Message</label><br />
+        <textarea
+          cols="25"
+          rows="10"
+          type="message"
+          name="message"
+          id="message"
+        ></textarea>
+      </div>
+      <!-- Select Option -->
+      <div>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+          <option value="female" selected>female</option>
+          <option value="male">male</option>
+          <option value="others">others</option>
+        </select>
+      </div>
+      <!-- Input Number -->
+      <div>
+        <label for="age">Age</label><br />
+        <input type="number" name="age" id="age" />
+      </div>
+      <!-- Input Date -->
+      <div>
+        <label for="birthdate">Birthdate</label><br />
+        <input type="date" name="birthdate" id="birthdate" />
+      </div>
+      <!-- Input Radio -->
+      <div>
+        <label for="membership">Membership:</label><br />
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="simple"
+        />Simple
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="standard"
+          checked
+        />Standard
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="premium"
+        />Premium
+      </div>
+      <!-- Input Checkbox -->
+      <div>
+        <label for="hobbies">I Like:</label><br />
+        <input
+          type="checkbox"
+          name="likes"
+          value="music"
+          id="hobbies"
+          checked
+        />Music
+        <input type="checkbox" name="likes" value="movies" id="hobbies" />Movies
+        <input
+          type="checkbox"
+          name="likes"
+          value="swimming"
+          id="hobbies"
+        />Swimming
+        <input type="checkbox" name="likes" value="dance" id="hobbies" />Dance
+      </div>
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" />
 
-    <!--Ordered List  -->
-    <!-- Can change type by A, a, 1, I, i -->
-    <ol type="A">
-      <li>Item -1</li>
-      <li>Item -2</li>
-      <li>Item -3</li>
-      <li>Item -4</li>
-      <li>Item -5</li>
-      <li>Item -6</li>
-    </ol>
-
-    <!-- Nested List -->
-    <ul>
-      <li>Item -1</li>
-      <li>Item -2</li>
-      <ul>
-        <li>sub item 1</li>
-        <li>sub item 2</li>
-        <li>sub item 3</li>
-        <li>sub item 4</li>
-      </ul>
-      <li>Item -3</li>
-      <li>Item -4</li>
-      <li>Item -5</li>
-      <li>Item -6</li>
-    </ul>
-
-    <!-- Tables -->
-    <table>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Age</th>
-      </tr>
-      <tbody>
-        <tr>
-          <td>John</td>
-          <td>Doe</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>Jack</td>
-          <td>harry</td>
-          <td>20</td>
-        </tr>
-        <tr>
-          <td>Nancy</td>
-          <td>john</td>
-          <td>30</td>
-        </tr>
-        <tr>
-          <td>Brad</td>
-          <td>traversy</td>
-          <td>36</td>
-        </tr>
-      </tbody>
-    </table>
+      <!--Using Button tag -->
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
